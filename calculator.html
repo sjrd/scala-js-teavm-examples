@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scala.js TeaVM Calculator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="calculator/src/main/resources/calculator.css">
+</head>
+<body>
+
+<div class="top">
+  <p>This calculator supports the following operators: + - * /.
+  Also grouping parentheses supported. Example: (4 + 5) * 6</p>
+  <button id="calculate" class="calculate" tabindex="2">Calculate</button>
+  <div class="calc-panel">
+    <input type="text" id="expr" class="expr" tabindex="1"/>
+  </div>
+</div>
+<div id="result-list" class="result-list"></div>
+
+<script type="text/javascript" src="./calculator/target/scala-2.11/scalajs-teavm-calculator-opt.js"></script>
+<script type="text/javascript" src="./calculator/target/scala-2.11/scalajs-teavm-calculator-launcher.js"></script>
+
+</body>
+</html>
